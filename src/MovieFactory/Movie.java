@@ -3,7 +3,7 @@ package MovieFactory;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Movie extends Video{
+public class Movie extends Video {
 
     private ArrayList<String> cinemasDisplayed;
     private ArrayList<String> mainCharacters;
@@ -34,7 +34,9 @@ public class Movie extends Video{
 
     public void addNewActor(String actor) {
         // Check if the actor is on the array list
-        if(mainCharacters.contains(actor)){ return;}
+        if (mainCharacters.contains(actor)) {
+            return;
+        }
 
         this.mainCharacters.add(actor);
     }

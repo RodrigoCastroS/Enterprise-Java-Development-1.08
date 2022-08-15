@@ -2,6 +2,7 @@ package IntLists;
 
 public interface IntList {
 
-    public void add();
-    public void get();
+    void add(int number);
+
+    int get(int number);
 }

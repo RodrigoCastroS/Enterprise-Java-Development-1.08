@@ -1,8 +1,11 @@
 import CarFactory.UtilityVehicle;
+import IntLists.IntArrayList;
+import IntLists.IntVector;
 import Model.HelperMethods;
 import MovieFactory.TvSeries;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Main {
@@ -28,10 +31,21 @@ public class Main {
         // 4th exercise
         System.out.println("\n");
         System.out.println("------------ Videos Factory -----------------");
-        TvSeries theOffice = new TvSeries("The Office", "comedy", 12000, 6, "HBO", new Date(24-5-2015));
+        TvSeries theOffice = new TvSeries("The Office", "comedy", 12000, 6, "HBO", new Date(24 - 5 - 2015));
 
         System.out.println(theOffice);
+
+        // 5th exercise
+        System.out.println("\n");
+        System.out.println("------------ IntLists -----------------");
+        IntArrayList array1 = new IntArrayList();
+        IntVector intVector = new IntVector();
+
+        for (int i = 0; i < 41; i++) {
+            intVector.add(i);
+        }
+
+        System.out.println(intVector.length());
+
     }
-
-
 }
